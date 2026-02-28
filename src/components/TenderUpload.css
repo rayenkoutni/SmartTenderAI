@@ -1,0 +1,251 @@
+.upload-page.enterprise-upload {
+    animation: fadeIn 0.4s ease-out;
+    max-width: 680px;
+    /* Slightly wider for enterprise layout */
+    margin: 0 auto;
+}
+
+.description-text {
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--text-muted);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.upload-zone {
+    border: 1.5px dashed var(--border-light);
+    transition: all 0.3s ease;
+    min-height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--bg-surface);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.upload-zone:hover {
+    border-color: var(--primary);
+    background-color: #F8FBFF;
+}
+
+.upload-zone.has-file {
+    border: 1.5px solid var(--primary);
+    min-height: auto;
+    padding: 16px;
+    background-color: #F8FBFF;
+}
+
+.upload-icon-container {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    background-color: #F0F6FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+}
+
+.browse-btn {
+    margin-top: 8px;
+    padding: 10px 24px;
+    font-size: 14px;
+}
+
+.hidden-input {
+    display: none;
+}
+
+.file-preview-enterprise {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 8px;
+}
+
+.file-icon-enterprise {
+    width: 48px;
+    height: 48px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    margin-right: 16px;
+    border: 1px solid var(--border-light);
+}
+
+.file-details {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    flex: 1;
+}
+
+.file-name {
+    font-weight: 600;
+    color: var(--text-main);
+    font-size: 15px;
+}
+
+.file-size {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-top: 4px;
+}
+
+.btn-icon {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+}
+
+.btn-icon:hover {
+    color: #da1e28;
+}
+
+/* AI Intelligence Panel */
+.ai-intelligence-panel {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    text-align: left;
+}
+
+.panel-title {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.ai-steps-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.ai-step {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--text-main);
+}
+
+.ai-step-icon {
+    color: var(--primary);
+    background-color: #F0F6FF;
+    padding: 4px;
+    border-radius: 6px;
+    width: 28px;
+    height: 28px;
+}
+
+/* Action Footer */
+.analyze-btn {
+    padding: 16px 32px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 320px;
+    border-radius: 8px;
+    /* Slightly squarer for enterprise */
+    font-weight: 600;
+    height: 56px;
+    transition: all 0.3s ease;
+    margin: 0 auto;
+}
+
+.analyze-btn.analyzing {
+    background-color: rgba(15, 98, 254, 0.9);
+    cursor: default;
+}
+
+.loading-state {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.analyze-helper {
+    font-size: 13px;
+}
+
+.spin {
+    animation: spin 1s linear infinite;
+}
+
+/* Trust Signals */
+.trust-signals {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 12px;
+    color: #6f6f6f;
+    margin-top: 32px;
+}
+
+.trust-signal {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.trust-signal-dot {
+    color: var(--border-light);
+    font-size: 16px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .ai-steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trust-signals {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .trust-signal-dot {
+        display: none;
+    }
+}
