@@ -133,13 +133,15 @@ Frontend runs on: http://localhost:5173
 
 🔐 Environment Variables
 
-Create a .env file (not committed to GitHub):
 
 GROQ_API_KEY=your_groq_api_key_here
 EMAILJS_SERVICE_ID=your_service_id
 EMAILJS_TEMPLATE_SELECTION=your_template_id
 EMAILJS_TEMPLATE_REJECTION=your_template_id
 EMAILJS_PUBLIC_KEY=your_public_key
+
+
+
 ⚠️ Limitations
 
 No persistent database (in-memory processing only)
@@ -177,5 +179,6 @@ Hackathon Project – Inetum Challenge
 
 
 ---
+
 
 
