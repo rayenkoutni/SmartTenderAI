@@ -111,8 +111,7 @@ Export report & send emails
 ## ▶️ Demo Video
 
 🎥 Demo video link:  
-(Add your unlisted YouTube or Google Drive link here)
-
+https://drive.google.com/file/d/1Yj-TCUOiLPbqrLItlRGuABj1EC3tKVSe/view?usp=sharing
 ---
 
 ## ⚙️ How to Run the Project
@@ -179,17 +178,4 @@ Hackathon Project – Inetum Challenge
 
 ---
 
-### ✅ This README is:
-- GitHub-friendly
-- Judge-friendly
-- Clean, modern, professional
-- Copy-paste ready
-- Perfect for a hackathon MVP
 
-If you want next, I can:
-- Add **badges** (React, Flask, AI)
-- Add **screenshots section**
-- Optimize for **GitHub Stars & visibility**
-- Tailor it for **Inetum branding**
-
-Just tell me 👍
